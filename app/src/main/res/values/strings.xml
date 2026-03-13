@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Help Articles</string>
+    <string name="help_articles">Help Articles</string>
+    <string name="all">All</string>
+    <string name="no_results">No Results</string>
+    <string name="no_articles">No Articles</string>
+    <string name="try_adjusting_your_search_or_filters">Try adjusting your search or filters</string>
+    <string name="no_help_articles_available_yet">No help articles available yet</string>
+    <string name="article">Article</string>
+    <string name="navigate_back">Navigate back</string>
+    <string name="refresh_article">Refresh article</string>
+</resources>
