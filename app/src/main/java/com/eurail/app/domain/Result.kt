@@ -9,7 +9,6 @@ sealed class Result<out T> {
 
     data class Error(
         val error: com.eurail.app.domain.Error,
-        val cachedData: Any? = null
     ) : Result<Nothing>()
 }
 

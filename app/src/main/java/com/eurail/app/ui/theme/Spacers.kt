@@ -1,4 +1,4 @@
-package com.buildkt.material3.tokens
+package com.eurail.app.ui.theme
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable

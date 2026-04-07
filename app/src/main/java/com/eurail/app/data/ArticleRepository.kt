@@ -7,6 +7,7 @@ import com.eurail.app.data.remote.dto.ArticleDto
 import com.eurail.app.domain.Article
 import com.eurail.app.domain.Result
 import com.eurail.app.domain.Source
+import com.eurail.app.domain.repository.ArticleRepository
 import com.eurail.shared.cache.ArticleCache
 import com.eurail.shared.cache.CacheAge
 import com.eurail.shared.cache.CachedArticle
@@ -16,17 +17,6 @@ import kotlinx.datetime.Instant
 import kotlinx.datetime.LocalDateTime
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
-
-interface ArticleRepository {
-
-    suspend fun getArticles(forceRefresh: Boolean = false): Result<List<Article>>
-
-    suspend fun getArticleDetail(id: String, forceRefresh: Boolean = false): Result<Article>
-
-    suspend fun refreshArticles(): Result<List<Article>>
-
-    fun observeArticles(): Flow<List<Article>?>
-}
 
 class ArticleRepositoryImpl(
     private val apiService: ArticleApiService,
@@ -111,12 +101,6 @@ class ArticleRepositoryImpl(
             is ApiResult.Error -> {
                 Result.Error(result.error)
             }
-        }
-    }
-
-    override fun observeArticles(): Flow<List<Article>?> {
-        return cache.observeArticleList().map { entry ->
-            entry?.data?.articles?.map { it.toArticle() }
         }
     }
 

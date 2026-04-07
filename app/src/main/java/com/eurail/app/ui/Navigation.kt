@@ -10,7 +10,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.eurail.app.data.ArticleRepository
+import com.eurail.app.domain.repository.ArticleRepository
 import com.eurail.app.ui.screens.detail.ArticleDetailScreen
 import com.eurail.app.ui.screens.detail.ArticleDetailViewModel
 import com.eurail.app.ui.screens.list.ArticleListScreen

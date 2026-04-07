@@ -27,7 +27,7 @@ import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 import androidx.compose.ui.unit.dp
-import com.buildkt.material3.tokens.spacers
+import com.eurail.app.ui.theme.spacers
 import com.eurail.app.domain.Error
 import com.eurail.app.domain.Error.NetworkError
 import com.eurail.app.domain.Error.RemoteError

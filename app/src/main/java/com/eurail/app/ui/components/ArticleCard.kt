@@ -16,7 +16,7 @@ import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.PreviewLightDark
-import com.buildkt.material3.tokens.spacers
+import com.eurail.app.ui.theme.spacers
 import com.eurail.app.domain.Article
 import com.eurail.app.ui.theme.EurailTheme
 import kotlinx.datetime.LocalDateTime

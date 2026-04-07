@@ -8,9 +8,6 @@ import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.platform.LocalContext
-import com.buildkt.material3.tokens.DefaultSpacers
-import com.buildkt.material3.tokens.LocalSpacers
-import com.buildkt.material3.tokens.Spacers
 
 @Composable
 fun EurailTheme(

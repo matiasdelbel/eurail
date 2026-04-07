@@ -4,8 +4,8 @@ import android.app.Application
 import com.eurail.app.data.remote.ArticleApiService
 import com.eurail.app.data.remote.KtorArticleApiService
 import com.eurail.app.data.remote.interceptor.MockInterceptor
-import com.eurail.app.data.ArticleRepository
 import com.eurail.app.data.ArticleRepositoryImpl
+import com.eurail.app.domain.repository.ArticleRepository
 import com.eurail.app.work.ArticlePrefetchWorker
 import com.eurail.shared.cache.ArticleCache
 import com.eurail.shared.cache.InMemoryArticleCache

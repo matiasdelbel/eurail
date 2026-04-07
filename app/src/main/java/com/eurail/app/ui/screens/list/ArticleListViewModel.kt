@@ -2,9 +2,9 @@ package com.eurail.app.ui.screens.list
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.eurail.app.data.ArticleRepository
 import com.eurail.app.domain.Result
 import com.eurail.app.domain.Article
+import com.eurail.app.domain.repository.ArticleRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

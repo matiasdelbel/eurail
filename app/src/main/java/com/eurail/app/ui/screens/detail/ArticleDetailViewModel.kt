@@ -2,8 +2,8 @@ package com.eurail.app.ui.screens.detail
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.eurail.app.data.ArticleRepository
 import com.eurail.app.domain.Result
+import com.eurail.app.domain.repository.ArticleRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -26,13 +26,11 @@ class ArticleDetailViewModel(
     }
 
     fun refresh() {
-        viewModelScope.launch {
-            val currentState = _uiState.value
-            if (currentState is ArticleDetailUiState.Success) {
-                _uiState.value = currentState.copy(isRefreshing = true)
-            }
-            loadArticle(forceRefresh = true)
+        val currentState = _uiState.value
+        if (currentState is ArticleDetailUiState.Success) {
+            _uiState.value = currentState.copy(isRefreshing = true)
         }
+        loadArticle(forceRefresh = true)
     }
 
     fun retry() {

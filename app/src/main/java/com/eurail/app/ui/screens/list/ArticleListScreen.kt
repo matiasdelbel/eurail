@@ -23,7 +23,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.PreviewLightDark
-import com.buildkt.material3.tokens.spacers
+import com.eurail.app.ui.theme.spacers
 import com.eurail.app.R
 import com.eurail.app.domain.Article
 import com.eurail.app.ui.components.ArticleCard
